@@ -1,0 +1,10 @@
+function fibonacci(n) {
+    let resultado = [0, 1]; 
+    for (let i = 2; i < n; i++) {
+        resultado.push(resultado[i - 1] + resultado[i - 2]); 
+    }
+    return resultado;
+}
+
+const termos = 10; 
+console.log(`Os primeiros ${termos} termos da sequência de Fibonacci são: ${fibonacci(termos).join(", ")}`);
